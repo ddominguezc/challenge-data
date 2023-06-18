@@ -1,0 +1,47 @@
+{
+    "job_id": 126485230725853,
+    "creator_user_name": "dianabigdatatests@gmail.com",
+    "run_as_user_name": "dianabigdatatests@gmail.com",
+    "run_as_owner": true,
+    "settings": {
+        "name": "process_backup_departments",
+        "email_notifications": {
+            "no_alert_for_skipped_runs": false
+        },
+        "webhook_notifications": {},
+        "timeout_seconds": 0,
+        "max_concurrent_runs": 1,
+        "tasks": [
+            {
+                "task_key": "execute_process",
+                "notebook_task": {
+                    "notebook_path": "/Shared/backup_tables",
+                    "source": "WORKSPACE"
+                },
+                "job_cluster_key": "Job_cluster",
+                "timeout_seconds": 0,
+                "email_notifications": {}
+            }
+        ],
+        "job_clusters": [
+            {
+                "job_cluster_key": "Job_cluster",
+                "new_cluster": {
+                    "spark_version": "11.3.x-scala2.12",
+                    "azure_attributes": {},
+                    "instance_pool_id": "0203-184255-flume24-pool-wq63ura4",
+                    "policy_id": "D062CF959D00009C",
+                    "driver_instance_pool_id": "0203-184424-diet25-pool-au9jd9jw",
+                    "data_security_mode": "SINGLE_USER",
+                    "runtime_engine": "STANDARD",
+                    "autoscale": {
+                        "min_workers": 1,
+                        "max_workers": 2
+                    }
+                }
+            }
+        ],
+        "format": "MULTI_TASK"
+    },
+    "created_time": 1684775362192
+}
