@@ -1,0 +1,3 @@
+dbfs:/FileStore/challenge/backups/backup_hired_employees_2023-06-18/part-00000-tid-827900971457858537-4674df49-a2c6-40f5-ad48-71e2b821c990-5-1-c000.avro
+dbfs:/FileStore/challenge/backups/backup_departemnts_2023-06-18.avro/part-00000-tid-5121133544448263719-bd27ffc6-4a9b-4f10-92d0-c9a812a37086-3-1-c000.avro
+dbfs:/FileStore/challenge/backups/backup_jobs_2023-06-18/part-00000-tid-4693135128709066513-70376988-aa1a-434a-ad36-2e082edb841c-6-1-c000.avro
