@@ -33,7 +33,7 @@ app = Flask(__name__)
 # COMMAND ----------
 
 
-@app.route('/employees/hired', methods=['GET'])
+@app.route('/employees/mean', methods=['GET'])
 
 def department_stats():
 
@@ -82,5 +82,5 @@ def department_stats():
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 
-# http://localhost:5000/employees/hired
+# http://localhost:5000/employees/mean
 
