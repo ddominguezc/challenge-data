@@ -73,3 +73,8 @@ def data_metric_1():
 
     return jsonify(data_metric_1)
 
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+
+# http://localhost:5000/employees/hired
